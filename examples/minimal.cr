@@ -1,0 +1,13 @@
+require "../src/epilog"
+
+logger = Epilog::Logger.new "minimal"
+logger.success "success!"
+logger.error "error!"
+logger.fatal "fatal!"
+logger.warn "warn!"
+logger.log "log!"
+logger.info "info!"
+logger.start "start!"
+logger.ready "ready!"
+logger.debug "debug!"
+logger.trace "trace!"

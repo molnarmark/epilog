@@ -1,0 +1,15 @@
+name: epilog
+version: 1.0.0
+
+authors:
+  - Mark Molnar <molnarpw@gmail.com>
+
+dependencies:
+  crayon:
+    github: crystalrealm/crayon
+  stringpad:
+    github: crystalrealm/stringpad
+
+crystal: 0.26.0
+
+license: MIT
