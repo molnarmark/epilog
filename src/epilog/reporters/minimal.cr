@@ -1,4 +1,3 @@
-require "crayon"
 require "stringpad"
 require "../log_types"
 
