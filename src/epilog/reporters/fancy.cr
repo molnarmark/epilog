@@ -9,8 +9,8 @@ module Epilog
     def format(log_type, message)
       foreground = @options[log_type]["foreground"].as(Symbol)
       background = @options[log_type]["background"].as(Symbol)
-      colored_emoji = @options[log_type]["emoji"].colorize.fore(foreground).back(background).mode(:bold)
-      colored_log_type = log_type.colorize.fore(foreground).back(background).mode(:bold)
+      colored_emoji = @options[log_type]["emoji"].colorize.fore(foreground).mode(:bold)
+      colored_log_type = log_type.colorize.fore(foreground).mode(:bold)
       colored_message = message.colorize(:white)
       "#{colored_emoji} #{Stringpad.rpad(colored_log_type, " ", 8 - log_type.size)} #{colored_message}"
     end

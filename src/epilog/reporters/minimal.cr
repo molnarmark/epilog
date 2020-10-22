@@ -9,7 +9,7 @@ module Epilog
     end
 
     def format(log_type, message)
-      time = Time.now.to_s("%H:%M:%S %P")
+      time = Time.local.to_s("%H:%M:%S %P")
       "[#{time}] #{Stringpad.rpad(log_type, " ", 8 - log_type.size)} #{message}"
     end
   end
